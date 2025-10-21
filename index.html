@@ -4,11 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffeeshop</title>
+    <meta
+      name="description"
+      content="Café de qualidade, ambiente acolhedor e os melhores grãos selecionados. Coffeeshop - sua experiência única com café."
+    />
+    <meta name="author" content="Glimber Pena" />
+    <meta
+      name="keywords"
+      content="café, coffeeshop, cafeteria, café especial, expresso, capuccino"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1>Bem-vindo ao Coffeeshop!</h1>
+    <div class="page">
+      <div class="test-text">Testando as fontes Inter e Noto Serif...</div>
+
+      <header class="header"></header>
+
+      <main class="content">
+        <section class="description">
+          <h1>Café especial na biblioteca Triple Peaks</h1>
+          <p>
+            Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+            você e vibrações aconchegantes para soltar a criatividade.
+          </p>
+          <div class="hours">
+            <p><strong>Horários:</strong></p>
+            <p>Segunda a Sexta: 10:00 – 19:00</p>
+            <p>Sábado e Domingo: 11:00 – 18:00</p>
+          </div>
+          <address class="address">
+            200 Barcelos Avenue, a cidade de Triple Peaks
+          </address>
+        </section>
+
+        <section class="recipes">
+          <h2>Receitas</h2>
+          <p>
+            Confira algumas receitas que colocamos para seu lanchinho caseiro:
+          </p>
+          <div class="recipe-list">
+            <div class="recipe">
+              <h3>Receita Aeropress</h3>
+              <p>5 min</p>
+            </div>
+            <div class="recipe">
+              <h3>Receita de Prensa Francesa</h3>
+              <p>15 min</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation">
+          <h2>Reservar uma mesa</h2>
+          <form class="reservation-form">
+            <label for="name">Nome *</label>
+            <input type="text" id="name" placeholder="Nome" required />
+
+            <label for="guests">Número de convidados *</label>
+            <input
+              type="number"
+              id="guests"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+            />
+
+            <label for="date">Data e hora *</label>
+            <input type="datetime-local" id="date" required />
+
+            <label for="email">Seu e-mail *</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="email@email.com"
+              required
+            />
+
+            <button type="submit">Reservar uma mesa</button>
+
+            <label class="checkbox-label">
+              <input type="checkbox" required />
+              Eu aceito os termos de uso
+            </label>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>
